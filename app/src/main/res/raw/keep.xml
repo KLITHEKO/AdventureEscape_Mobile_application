@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Keeps the full brand logo in the project even though no screen uses it yet
-     (the launcher icon was generated from it). -->
-<resources xmlns:tools="http://schemas.android.com/tools"
-    tools:keep="@drawable/img_adventure_logo" />
