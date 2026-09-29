@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="240dp"
+    android:viewportWidth="400"
+    android:viewportHeight="240">
+    <!-- Background Gradient -->
+    <path
+        android:pathData="M0,0h400v240h-400z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="0"
+                android:endX="400"
+                android:endY="240"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#2C523B" />
+                <item android:offset="0.7" android:color="#1D3929" />
+                <item android:offset="1.0" android:color="#0F2117" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Mountain Silhouette 1 -->
+    <path
+        android:pathData="M0,240 L80,120 L160,180 L240,90 L320,170 L400,100 L400,240 Z"
+        android:fillColor="#223E2E" />
+    <!-- Mountain Silhouette 2 -->
+    <path
+        android:pathData="M0,240 L120,150 L200,200 L280,130 L360,210 L400,170 L400,240 Z"
+        android:fillColor="#152B1E" />
+    <!-- Sun / Glow -->
+    <path
+        android:pathData="M240,70 A25,25 0 1,1 240,69 Z"
+        android:fillColor="#D6810B" />
+    <!-- Trail Line -->
+    <path
+        android:pathData="M30,240 Q150,190 220,240"
+        android:strokeWidth="3"
+        android:strokeColor="#D6810B"
+        android:fillColor="#00000000" />
+</vector>

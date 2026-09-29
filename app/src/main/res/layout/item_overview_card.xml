@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Adventure Escape SA - Overview Card Item
+    Used in the Overview Page vertically scrolling list.
+    Displays activity image placeholder, title, duration badge, price, and "View Details" button.
+-->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_overview_item"
+    style="@style/Widget.AdventureEscape.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <!-- Activity Photo Placeholder -->
+        <ImageView
+            android:id="@+id/img_overview_photo"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:contentDescription="@string/overview_title"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_hiking"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Category Pill -->
+        <TextView
+            android:id="@+id/tv_overview_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_pill"
+            android:backgroundTint="@color/bushveld_secondary_container"
+            android:textColor="@color/bushveld_on_secondary_container"
+            tools:text="Individual Activity"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_overview_photo" />
+
+        <!-- Duration info -->
+        <TextView
+            android:id="@+id/tv_overview_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            tools:text="4 Hours • Moderate"
+            android:textColor="@color/bushveld_text_muted"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_overview_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_overview_category" />
+
+        <!-- Activity Title -->
+        <TextView
+            android:id="@+id/tv_overview_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="8dp"
+            tools:text="Table Mountain 112m Abseil &amp; Guided Hike"
+            android:textColor="@color/bushveld_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_category" />
+
+        <!-- Short Description -->
+        <TextView
+            android:id="@+id/tv_overview_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Descend 112m off Table Mountain cliffs with breathtaking panoramic ocean and bay vistas."
+            android:textColor="@color/bushveld_text_secondary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_title" />
+
+        <!-- Divider Line -->
+        <View
+            android:id="@+id/divider_overview"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/bushveld_surface_variant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_description" />
+
+        <!-- Price -->
+        <LinearLayout
+            android:id="@+id/layout_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/btn_overview_view_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_overview_view_details">
+
+            <TextView
+                android:id="@+id/tv_overview_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="R 1,450"
+                android:textColor="@color/bushveld_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_per_person_unit"
+                android:textColor="@color/bushveld_text_muted"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- View Details Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_overview_view_details"
+            style="@style/Widget.AdventureEscape.Button.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/overview_btn_view_details"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_overview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

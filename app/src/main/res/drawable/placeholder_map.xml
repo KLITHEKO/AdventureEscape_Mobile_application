@@ -1,0 +1,49 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="240dp"
+    android:viewportWidth="400"
+    android:viewportHeight="240">
+    <!-- Ocean background -->
+    <path
+        android:pathData="M0,0h400v240h-400z"
+        android:fillColor="#EBF8FF" />
+    <!-- Western Cape Coastline polygon -->
+    <path
+        android:pathData="M120,0 L400,0 L400,240 L280,240 C260,200 220,180 180,180 C140,180 120,130 110,100 C100,70 110,30 120,0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="100"
+                android:startY="0"
+                android:endX="400"
+                android:endY="240"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#F7FAFC" />
+                <item android:offset="1.0" android:color="#EDF2F7" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Cape Peninsula Hook -->
+    <path
+        android:pathData="M110,95 Q90,130 95,160 Q105,170 100,190 Q90,185 85,150 Q85,120 105,95 Z"
+        android:fillColor="#CBD5E0" />
+    <!-- Pin 1: Cape Town & Table Mountain -->
+    <path
+        android:pathData="M110,105 A6,6 0 1,1 110,104 Z"
+        android:fillColor="#D6810B" />
+    <path
+        android:pathData="M110,105 A2,2 0 1,1 110,104 Z"
+        android:fillColor="#FFFFFF" />
+    <!-- Pin 2: Hermanus -->
+    <path
+        android:pathData="M180,185 A5,5 0 1,1 180,184 Z"
+        android:fillColor="#19472A" />
+    <!-- Pin 3: Cederberg -->
+    <path
+        android:pathData="M170,45 A5,5 0 1,1 170,44 Z"
+        android:fillColor="#D6810B" />
+    <!-- Pin 4: Garden Route -->
+    <path
+        android:pathData="M320,200 A5,5 0 1,1 320,199 Z"
+        android:fillColor="#D6810B" />
+</vector>

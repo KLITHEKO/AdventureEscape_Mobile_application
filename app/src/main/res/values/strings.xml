@@ -1,0 +1,139 @@
+<resources>
+    <!-- App Information -->
+    <string name="app_name">Adventure Escape SA</string>
+
+    <!-- Bottom Navigation Bar Labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_overview">Overview</string>
+    <string name="nav_calculate">Calculate</string>
+    <string name="nav_contact">Contact</string>
+    <string name="nav_about">About Us</string>
+
+    <!-- Shared price formats (R = South African Rand) -->
+    <string name="price_whole_rand">R %1$,.0f</string>
+    <string name="price_with_cents">R %1$,.2f</string>
+    <string name="price_discount_with_cents">- R %1$,.2f</string>
+    <string name="price_per_person">R %1$,.0f per person</string>
+    <string name="price_from_per_person">From R %1$,.0f pp</string>
+    <string name="price_per_person_unit">per person</string>
+    <string name="quantity_value">%1$d</string>
+
+    <!-- Screen 1: Home Page -->
+    <string name="home_location">Western Cape • South Africa</string>
+    <string name="home_badge_eco">Est. 2024</string>
+    <string name="home_hero_badge">EXPLORE THE WESTERN CAPE</string>
+    <string name="home_hero_tagline">Adventure Starts Outdoors</string>
+    <string name="home_hero_subtitle">Guided hiking, zip lining, kayaking and rock climbing for families, schools, tourists and corporate groups. Compare packages and get an instant quote.</string>
+    <string name="home_btn_browse">Browse Adventures</string>
+    <string name="home_about_teaser_title">Who We Are</string>
+    <string name="home_about_teaser_desc">Meet our founder and learn why we love the outdoors.</string>
+    <string name="home_section_featured">Adventure Packages</string>
+    <string name="home_see_all">See All</string>
+    <string name="home_btn_view">View</string>
+    <string name="cd_eco_mission">Leaf icon</string>
+
+    <!-- Screen 2: About Us -->
+    <string name="about_title">About Us</string>
+    <string name="cd_team_photo">Adventure Escape SA guides with a group outdoors</string>
+    <string name="about_team_caption">Founder Liam Daniels and the Adventure Escape SA guide team</string>
+    <string name="about_story_heading">Our Story</string>
+    <string name="about_story_p1">Adventure Escape SA is an initiative by Liam Daniels, who has always had a passion for outdoor adventure and eco-tourism. He noticed that families, tourists, schools and corporate groups struggle to find one place where they can compare and book exciting outdoor activities.</string>
+    <string name="about_story_p2">Established in 2024, we operate throughout the Western Cape and bring together a variety of professionally guided outdoor experiences for visitors of all ages and experience levels.</string>
+    <string name="about_mission_heading">What We Stand For</string>
+    <string name="about_mission_adventure_title">Teamwork</string>
+    <string name="about_mission_adventure_desc">Activities that bring families, classmates and colleagues together to work as a team.</string>
+    <string name="about_mission_sustain_title">Fitness</string>
+    <string name="about_mission_sustain_desc">Hiking, paddling and climbing that keep you active and build confidence.</string>
+    <string name="about_mission_community_title">Love of Nature</string>
+    <string name="about_mission_community_desc">Experiences that show off the beauty of the Western Cape and encourage people to protect it.</string>
+
+    <!-- Screen 3: Overview Page -->
+    <string name="overview_title">Explore Experiences</string>
+    <string name="overview_tab_packages">Adventure Packages</string>
+    <string name="overview_tab_activities">Individual Activities</string>
+    <string name="overview_btn_view_details">View Details</string>
+    <plurals name="overview_count_packages">
+        <item quantity="one">Showing %1$d adventure package</item>
+        <item quantity="other">Showing %1$d adventure packages</item>
+    </plurals>
+    <plurals name="overview_count_activities">
+        <item quantity="one">Showing %1$d individual activity</item>
+        <item quantity="other">Showing %1$d individual activities</item>
+    </plurals>
+
+    <!-- Screen 4: Individual Page -->
+    <string name="cd_back">Back</string>
+    <string name="cd_activity_photo">Activity photo</string>
+    <string name="detail_breadcrumb_format">Adventures › %1$s › %2$s</string>
+    <string name="detail_breadcrumb_packages">Packages</string>
+    <string name="detail_breadcrumb_activities">Activities</string>
+    <string name="detail_included_heading">What\'s Included</string>
+    <string name="detail_related_heading">You May Also Like</string>
+    <string name="detail_price_total">Price per person</string>
+    <string name="detail_btn_add_booking">Add to Booking</string>
+    <string name="detail_added_to_quotation">Added \"%1$s\" to your quotation!</string>
+    <string name="detail_view_quotation">View Quote</string>
+
+    <!-- Screen 5: Calculate Fee Page -->
+    <string name="calc_title">Quotation &amp; Fee Calculator</string>
+    <string name="calc_discount_tier_title">Discount Tier Progress</string>
+    <string name="calc_discount_tier_subtitle" formatted="false">2 bookings: 5% off • 3 bookings: 10% off • More than 3: 15% off</string>
+    <string name="calc_tier_standard">Standard Quotation</string>
+    <string name="calc_tier_explorer">Explorer Discount</string>
+    <string name="calc_tier_adventurer">Adventurer Discount</string>
+    <string name="calc_tier_trailblazer">Trailblazer Discount</string>
+    <string name="calc_tier_badge_applied">%1$d%% Applied</string>
+    <string name="calc_tier_inactive">No Discount Yet</string>
+    <string name="calc_tier_next_desc">Add one more package or activity to get %1$d%% off your total!</string>
+    <string name="calc_tier_max_desc">You have the maximum %1$d%% group discount!</string>
+    <string name="calc_tier_highest">Highest tier reached!</string>
+    <string name="calc_progress_target">Next: %1$d%% off</string>
+    <plurals name="calc_progress_bookings">
+        <item quantity="one">%1$d booking selected</item>
+        <item quantity="other">%1$d bookings selected</item>
+    </plurals>
+    <string name="calc_selected_heading">Your Bookings</string>
+    <string name="calc_empty_hint">No bookings yet. Browse Adventures and tap Add to Booking.</string>
+    <string name="calc_summary_heading">Quotation Summary</string>
+    <string name="calc_subtotal_label">Subtotal</string>
+    <string name="calc_discount_label" formatted="false">Discount (5%)</string>
+    <string name="calc_discount_label_format">Discount (%1$d%%)</string>
+    <string name="calc_total_label">Estimated Total</string>
+    <string name="calc_btn_proceed">Proceed to Booking</string>
+    <string name="calc_btn_edit">Edit</string>
+    <string name="calc_empty_dialog_title">Quotation Is Empty</string>
+    <string name="calc_empty_dialog_message">Please add at least one adventure package or activity before proceeding.</string>
+    <string name="calc_confirm_dialog_title">Confirm Your Quotation</string>
+    <string name="calc_quote_header">Your Adventure Escape SA quotation:</string>
+    <string name="calc_quote_line">• %1$s × %2$d: R %3$,.2f</string>
+    <string name="calc_quote_discount">Discount (%1$d%%): - R %2$,.2f</string>
+    <string name="calc_quote_total">Estimated Total: R %1$,.2f</string>
+    <string name="calc_quote_question">Would you like to contact us to send a booking request?</string>
+    <string name="cd_remove_booking">Remove booking</string>
+    <string name="cd_decrease_people">Remove one person</string>
+    <string name="cd_increase_people">Add one person</string>
+
+    <!-- Screen 6: Contact Us Page -->
+    <string name="contact_title">Contact Us</string>
+    <string name="contact_form_heading">Send a Booking Request</string>
+    <string name="contact_name_hint">Full Name</string>
+    <string name="contact_email_hint">Email Address</string>
+    <string name="contact_message_hint">Your message or booking request</string>
+    <string name="contact_btn_send">Send Message</string>
+    <string name="contact_error_name">Please enter your full name</string>
+    <string name="contact_error_email_empty">Please enter your email address</string>
+    <string name="contact_error_email_invalid">Please enter a valid email address</string>
+    <string name="contact_error_message">Please enter your message or booking request</string>
+    <string name="contact_sent_title">Request Received!</string>
+    <string name="contact_sent_message">Thank you, %1$s! Our team will reply to %2$s shortly.</string>
+    <string name="contact_sent_done">Done</string>
+    <string name="contact_info_heading">Get in Touch</string>
+    <string name="contact_phone_label">Phone / WhatsApp</string>
+    <string name="contact_phone_val">+27 (0)21 456 7890</string>
+    <string name="contact_email_label">Email</string>
+    <string name="contact_email_val">bookings@adventureescapesa.co.za</string>
+    <string name="contact_location_label">Operating Area</string>
+    <string name="contact_location_val">Cape Town &amp; throughout the Western Cape</string>
+    <string name="contact_map_heading">Where We Operate</string>
+    <string name="contact_map_badge">Guided adventures across the Western Cape</string>
+</resources>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Adventure Escape SA - Screen 4: An Individual Page (Activity Detail)
+    Features:
+    1. Back button and breadcrumb navigation
+    2. Large activity photo placeholder
+    3. Price and title display
+    4. Short description
+    5. "What's Included" checklist with checkmark icons
+    6. "You May Also Like" horizontal row of related package cards
+    7. Prominent "Add to Booking" button fixed near the bottom
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bushveld_background">
+
+    <!-- ================= TOP BAR WITH BACK BUTTON & BREADCRUMB ================= -->
+    <LinearLayout
+        android:id="@+id/layout_detail_top_bar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/bushveld_surface"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/btn_detail_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_back"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/bushveld_text_primary" />
+
+        <!-- Breadcrumb Navigation -->
+        <TextView
+            android:id="@+id/tv_detail_breadcrumb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            tools:text="Adventures &gt; Activities &gt; Kayaking Experience"
+            android:textColor="@color/bushveld_text_secondary"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <!-- ================= SCROLLABLE CONTENT BODY ================= -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_detail_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_detail_top_bar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- ================= LARGE PHOTO PLACEHOLDER ================= -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_large_photo"
+                style="@style/Widget.AdventureEscape.Card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_detail_large"
+                        android:layout_width="0dp"
+                        android:layout_height="220dp"
+                        android:contentDescription="@string/cd_activity_photo"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/placeholder_abseil"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Activity Type Badge -->
+                    <TextView
+                        android:id="@+id/tv_detail_badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/bg_pill"
+                        android:backgroundTint="@color/bushveld_secondary_container"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        tools:text="Individual Activity"
+                        android:textColor="@color/bushveld_on_secondary_container"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ================= TITLE & PRICE ================= -->
+            <!-- Price and Unit -->
+            <LinearLayout
+                android:id="@+id/layout_detail_price_row"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_large_photo">
+
+                <TextView
+                    android:id="@+id/tv_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="R 750"
+                    android:textColor="@color/bushveld_primary"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_detail_price_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/price_per_person_unit"
+                    android:textColor="@color/bushveld_text_muted"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_detail_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_pill"
+                    android:backgroundTint="@color/bushveld_surface_variant"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    tools:text="Half Day • Rivers &amp; Lakes"
+                    android:textColor="@color/bushveld_text_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Activity Title -->
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                tools:text="Kayaking Experience"
+                android:textColor="@color/bushveld_text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_detail_price_row" />
+
+            <!-- ================= SHORT DESCRIPTION ================= -->
+            <TextView
+                android:id="@+id/tv_detail_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4dp"
+                tools:text="Paddle through scenic rivers and lakes."
+                android:textColor="@color/bushveld_text_secondary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_title" />
+
+            <!-- ================= "WHAT'S INCLUDED" CHECKLIST ================= -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_included"
+                style="@style/Widget.AdventureEscape.Card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/bushveld_surface"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_description">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail_included_heading"
+                        android:textColor="@color/bushveld_text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Filled from the selected item's "Includes" list in code -->
+                    <LinearLayout
+                        android:id="@+id/layout_included_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ================= "YOU MAY ALSO LIKE" SECTION ================= -->
+            <TextView
+                android:id="@+id/tv_related_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="22dp"
+                android:text="@string/detail_related_heading"
+                android:textColor="@color/bushveld_text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_included" />
+
+            <!-- Horizontal row of related package cards -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_related_packages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="0dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_related_heading"
+                tools:listitem="@layout/item_featured_package" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- ================= PROMINENT "ADD TO BOOKING" BUTTON FIXED NEAR BOTTOM ================= -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bushveld_surface"
+        android:elevation="12dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout_bottom_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_price_total"
+                android:textColor="@color/bushveld_text_muted"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_bottom_price_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="R 1,450"
+                android:textColor="@color/bushveld_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Prominent "Add to Booking" Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_to_booking"
+            style="@style/Widget.AdventureEscape.Button.Primary"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/detail_btn_add_booking"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_nav_calculate"
+            app:iconGravity="textStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/layout_bottom_price"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

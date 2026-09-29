@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="240dp"
+    android:viewportWidth="400"
+    android:viewportHeight="240">
+    <path
+        android:pathData="M0,0h400v240h-400z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="0"
+                android:endX="400"
+                android:endY="240"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#234E52" />
+                <item android:offset="1.0" android:color="#0D3331" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Background mountain outline -->
+    <path
+        android:pathData="M0,180 L100,100 L180,140 L260,80 L360,150 L400,120 L400,240 L0,240 Z"
+        android:fillColor="#1A3B39" />
+    <!-- Team Member 1 Silhouette -->
+    <path
+        android:pathData="M160,110 A18,18 0 1,1 160,109 Z"
+        android:fillColor="#E2E8F0" />
+    <path
+        android:pathData="M130,190 C130,145 190,145 190,190 Z"
+        android:fillColor="#D6810B" />
+    <!-- Team Member 2 Silhouette -->
+    <path
+        android:pathData="M240,115 A16,16 0 1,1 240,114 Z"
+        android:fillColor="#E2E8F0" />
+    <path
+        android:pathData="M215,190 C215,150 265,150 265,190 Z"
+        android:fillColor="#19472A" />
+</vector>

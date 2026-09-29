@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App theme: Material 3, light only (the Bushveld palette is designed for a light background). -->
+    <style name="Theme.AdventureEscapeSA" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Brand Colours -->
+        <item name="colorPrimary">@color/bushveld_primary</item>
+        <item name="colorOnPrimary">@color/bushveld_on_primary</item>
+        <item name="colorPrimaryContainer">@color/bushveld_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/bushveld_on_primary_container</item>
+
+        <item name="colorSecondary">@color/bushveld_secondary</item>
+        <item name="colorOnSecondary">@color/bushveld_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/bushveld_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/bushveld_on_secondary_container</item>
+
+        <item name="colorTertiary">@color/bushveld_accent</item>
+        <item name="colorTertiaryContainer">@color/bushveld_accent_container</item>
+
+        <item name="android:colorBackground">@color/bushveld_background</item>
+        <item name="colorSurface">@color/bushveld_surface</item>
+        <item name="colorSurfaceVariant">@color/bushveld_surface_variant</item>
+        <item name="colorOutline">@color/bushveld_card_stroke</item>
+    </style>
+
+    <!-- Custom Button Styles for Adventure Escape SA -->
+    <style name="Widget.AdventureEscape.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/bushveld_primary</item>
+        <item name="android:textColor">@color/bushveld_on_primary</item>
+        <item name="iconTint">@color/bushveld_on_primary</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="Widget.AdventureEscape.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/bushveld_primary</item>
+        <item name="android:textColor">@color/bushveld_primary</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="Widget.AdventureEscape.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="strokeColor">@color/bushveld_card_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardBackgroundColor">@color/bushveld_surface</item>
+    </style>
+</resources>

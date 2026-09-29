@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Adventure Escape SA - Screen 3: The Overview Page
+    Features:
+    1. Top Title Bar
+    2. Two-tab toggle between "Adventure Packages" and "Individual Activities" (TabLayout)
+    3. Vertically scrolling list of cards (RecyclerView with image placeholder, title, price, "View Details" button)
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bushveld_background">
+
+    <!-- ================= TOP APP BAR ================= -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_overview"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bushveld_surface"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/overview_title"
+        app:titleTextColor="@color/bushveld_text_primary" />
+
+    <!-- ================= TWO-TAB TOGGLE ================= -->
+    <!-- Tab 1: Adventure Packages | Tab 2: Individual Activities -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bushveld_surface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_overview"
+        app:tabIndicatorColor="@color/bushveld_primary"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/bushveld_primary"
+        app:tabTextColor="@color/bushveld_text_secondary">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview_tab_packages" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview_tab_activities" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- Bottom line below tabs -->
+    <View
+        android:id="@+id/tab_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/bushveld_card_stroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout_overview" />
+
+    <!-- Result Count Indicator -->
+    <TextView
+        android:id="@+id/tv_overview_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        tools:text="Showing 2 Adventure Packages"
+        android:textColor="@color/bushveld_text_muted"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_divider" />
+
+    <!-- ================= VERTICALLY SCROLLING LIST OF CARDS ================= -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_overview_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_overview_count"
+        tools:listitem="@layout/item_overview_card" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="240dp"
+    android:viewportWidth="400"
+    android:viewportHeight="240">
+    <path
+        android:pathData="M0,0h400v240h-400z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="0"
+                android:endX="400"
+                android:endY="240"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#1A365D" />
+                <item android:offset="0.6" android:color="#2B6CB0" />
+                <item android:offset="1.0" android:color="#2C523B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Cape Cliffs -->
+    <path
+        android:pathData="M0,80 L90,140 L160,110 L220,180 L220,240 L0,240 Z"
+        android:fillColor="#333333" />
+    <!-- Ocean Waves -->
+    <path
+        android:pathData="M0,200 Q100,180 200,200 T400,200 L400,240 L0,240 Z"
+        android:fillColor="#153E75" />
+    <path
+        android:pathData="M0,215 Q100,195 200,215 T400,215 L400,240 L0,240 Z"
+        android:fillColor="#2A4365" />
+    <!-- Kayak Silhouette -->
+    <path
+        android:pathData="M220,190 C250,185 290,185 320,190 C290,196 250,196 220,190 Z"
+        android:fillColor="#D6810B" />
+    <path
+        android:pathData="M260,175 L280,175 L275,190 L265,190 Z"
+        android:fillColor="#E2E8F0" />
+</vector>

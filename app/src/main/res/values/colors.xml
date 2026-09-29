@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Adventure Escape SA colour palette
+      Forest Green  #19472A  primary: buttons, navigation, headings
+      Sunset Orange #D6810B  secondary: prices, highlights
+      Coral         #FF7F6B  accent: badges, discount callouts
+      White         #FFFFFF  backgrounds and text on green
+      Charcoal      #333333  main text
+    The light "container" colours are tints of the palette colours, used behind badges.
+    Change a hex code here and every screen updates.
+-->
+<resources>
+    <!-- Primary: Forest Green -->
+    <color name="bushveld_primary">#19472A</color>
+    <color name="bushveld_primary_container">#E3EEE7</color>
+    <color name="bushveld_on_primary">#FFFFFF</color>
+    <color name="bushveld_on_primary_container">#19472A</color>
+
+    <!-- Secondary: Sunset Orange -->
+    <color name="bushveld_secondary">#D6810B</color>
+    <color name="bushveld_secondary_dark">#19472A</color>
+    <color name="bushveld_secondary_container">#FBEBD6</color>
+    <color name="bushveld_on_secondary">#FFFFFF</color>
+    <color name="bushveld_on_secondary_container">#333333</color>
+
+    <!-- Accent: Coral -->
+    <color name="bushveld_accent">#FF7F6B</color>
+    <color name="bushveld_accent_container">#FFE5E1</color>
+
+    <!-- Backgrounds & Surfaces: White -->
+    <color name="bushveld_background">#FFFFFF</color>
+    <color name="bushveld_surface">#FFFFFF</color>
+    <color name="bushveld_surface_variant">#F3F6F4</color>
+    <color name="bushveld_card_stroke">#E0E6E2</color>
+
+    <!-- Text: Charcoal -->
+    <color name="bushveld_text_primary">#333333</color>
+    <color name="bushveld_text_secondary">#555555</color>
+    <color name="bushveld_text_muted">#777777</color>
+
+    <!-- Basic -->
+    <color name="white">#FFFFFF</color>
+    <color name="scrim_dark">#80000000</color>
+</resources>
