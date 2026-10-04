@@ -24,22 +24,25 @@
             android:id="@+id/tv_calc_item_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            tools:text="Table Mountain 112m Abseil"
             android:textColor="@color/bushveld_text_primary"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@id/btn_calc_delete"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Table Mountain 112m Abseil" />
 
         <!-- Remove Item Button -->
         <ImageButton
             android:id="@+id/btn_calc_delete"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/cd_remove_booking"
             android:src="@drawable/ic_delete"
+            app:tint="@color/bushveld_primary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,17 +52,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
-            tools:text="R 1,450 per person"
             android:textColor="@color/bushveld_text_secondary"
             android:textSize="13sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_calc_item_title" />
+            app:layout_constraintTop_toBottomOf="@id/tv_calc_item_title"
+            tools:text="R 1,450 per person" />
 
         <!-- Quantity Stepper Controls -->
         <LinearLayout
             android:id="@+id/layout_stepper"
             android:layout_width="wrap_content"
-            android:layout_height="36dp"
+            android:layout_height="48dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/bg_pill"
             android:backgroundTint="@color/bushveld_surface_variant"
@@ -73,8 +76,10 @@
             <!-- Minus Button -->
             <ImageButton
                 android:id="@+id/btn_calc_minus"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/cd_decrease_people"
                 android:src="@drawable/ic_remove" />
@@ -85,16 +90,18 @@
                 android:layout_width="36dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                tools:text="2"
                 android:textColor="@color/bushveld_text_primary"
                 android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="2" />
 
             <!-- Plus Button -->
             <ImageButton
                 android:id="@+id/btn_calc_plus"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/cd_increase_people"
                 android:src="@drawable/ic_add" />
@@ -123,10 +130,10 @@
                 android:id="@+id/tv_calc_line_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="R 2,900"
                 android:textColor="@color/bushveld_primary"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="R 2,900" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

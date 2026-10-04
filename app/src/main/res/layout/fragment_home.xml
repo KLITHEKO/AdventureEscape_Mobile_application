@@ -184,7 +184,9 @@
                         style="@style/Widget.AdventureEscape.Button.Primary"
                         android:layout_width="match_parent"
                         android:layout_height="52dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginTop="14dp"
+                        android:maxWidth="320dp"
                         android:text="@string/home_btn_browse"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -205,7 +207,9 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="14dp"
+            android:layout_marginBottom="20dp"
             app:cardBackgroundColor="@color/bushveld_surface_variant"
+            app:layout_constraintBottom_toTopOf="@+id/tv_featured_heading"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_hero">
@@ -253,7 +257,7 @@
                     android:id="@+id/btn_view_about"
                     style="@style/Widget.AdventureEscape.Button.Outlined"
                     android:layout_width="wrap_content"
-                    android:layout_height="38dp"
+                    android:layout_height="48dp"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
                     android:minHeight="0dp"
@@ -263,7 +267,9 @@
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/tv_about_teaser_title"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -302,6 +308,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
             android:clipToPadding="false"
             android:orientation="horizontal"
             android:paddingStart="16dp"
@@ -311,6 +318,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_featured_heading"
             tools:listitem="@layout/item_featured_package" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
