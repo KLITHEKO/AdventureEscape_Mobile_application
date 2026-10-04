@@ -25,7 +25,7 @@
             android:layout_height="140dp"
             android:contentDescription="@string/home_section_featured"
             android:scaleType="centerCrop"
-            android:src="@drawable/placeholder_hiking"
+            android:src="@drawable/cape_town_hikes_1140x530"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

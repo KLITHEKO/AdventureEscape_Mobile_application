@@ -26,10 +26,21 @@
             android:layout_height="170dp"
             android:contentDescription="@string/overview_title"
             android:scaleType="centerCrop"
-            android:src="@drawable/placeholder_hiking"
+            android:src="@drawable/istock_1439137847_schema"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Contrast Scrim Overlay -->
+        <View
+            android:id="@+id/view_overview_photo_scrim"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/scrim_dark"
+            app:layout_constraintBottom_toBottomOf="@id/img_overview_photo"
+            app:layout_constraintEnd_toEndOf="@id/img_overview_photo"
+            app:layout_constraintStart_toStartOf="@id/img_overview_photo"
+            app:layout_constraintTop_toTopOf="@id/img_overview_photo" />
 
         <!-- Category Pill -->
         <TextView
@@ -40,14 +51,14 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/bg_pill"
             android:backgroundTint="@color/bushveld_secondary_container"
-            android:textColor="@color/bushveld_on_secondary_container"
-            tools:text="Individual Activity"
-            android:textSize="11sp"
-            android:textStyle="bold"
             android:paddingHorizontal="10dp"
             android:paddingVertical="4dp"
+            android:textColor="@color/bushveld_on_secondary_container"
+            android:textSize="11sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/img_overview_photo" />
+            app:layout_constraintTop_toBottomOf="@id/img_overview_photo"
+            tools:text="Individual Activity" />
 
         <!-- Duration info -->
         <TextView
@@ -55,12 +66,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="14dp"
-            tools:text="4 Hours • Moderate"
-            android:textColor="@color/bushveld_text_muted"
+            android:textColor="@color/bushveld_text_secondary"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@id/tv_overview_category"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tv_overview_category" />
+            app:layout_constraintTop_toTopOf="@id/tv_overview_category"
+            tools:text="4 Hours • Moderate" />
 
         <!-- Activity Title -->
         <TextView
@@ -69,13 +80,13 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="14dp"
             android:layout_marginTop="8dp"
-            tools:text="Table Mountain 112m Abseil &amp; Guided Hike"
             android:textColor="@color/bushveld_text_primary"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_overview_category" />
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_category"
+            tools:text="Table Mountain 112m Abseil &amp; Guided Hike" />
 
         <!-- Short Description -->
         <TextView
@@ -86,12 +97,12 @@
             android:layout_marginTop="4dp"
             android:ellipsize="end"
             android:maxLines="2"
-            tools:text="Descend 112m off Table Mountain cliffs with breathtaking panoramic ocean and bay vistas."
             android:textColor="@color/bushveld_text_secondary"
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_overview_title" />
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_title"
+            tools:text="Descend 112m off Table Mountain cliffs with breathtaking panoramic ocean and bay vistas." />
 
         <!-- Divider Line -->
         <View
@@ -120,16 +131,16 @@
                 android:id="@+id/tv_overview_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="R 1,450"
                 android:textColor="@color/bushveld_primary"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="R 1,450" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/price_per_person_unit"
-                android:textColor="@color/bushveld_text_muted"
+                android:textColor="@color/bushveld_text_secondary"
                 android:textSize="11sp" />
         </LinearLayout>
 

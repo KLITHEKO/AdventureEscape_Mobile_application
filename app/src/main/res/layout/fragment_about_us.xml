@@ -58,7 +58,7 @@
                     android:layout_height="180dp"
                     android:contentDescription="@string/cd_team_photo"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/placeholder_team" />
+                    android:src="@drawable/image_595_1080x675" />
 
                 <!-- Photo Caption -->
                 <TextView

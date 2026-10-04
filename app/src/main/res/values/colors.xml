@@ -36,7 +36,7 @@
     <!-- Text: Charcoal -->
     <color name="bushveld_text_primary">#333333</color>
     <color name="bushveld_text_secondary">#555555</color>
-    <color name="bushveld_text_muted">#777777</color>
+    <color name="bushveld_text_muted">#595959</color>
 
     <!-- Basic -->
     <color name="white">#FFFFFF</color>
