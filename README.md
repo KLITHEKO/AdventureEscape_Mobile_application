@@ -238,6 +238,13 @@ Notable changes to the app are recorded here, newest first. The format follows *
 ### [Unreleased]
 - _[Add upcoming changes here, e.g. "Replaced placeholder images with final photographs".]_
 
+- [1.1.1] – 2026-10-04
+### Changed
+- Replaced placeholder vector drawables (placeholder_hiking, placeholder_abseil) with final stock photographs (table_hike, abseil_hero, kayak_hero) in Overview cards.
+- Fixed duplicate image bug in `item_overview_card.xml` – Overview and Featured cards now show different pictures per activity via RecyclerView Adapter (imageRes binding) instead of hardcoded `android:src`.
+- Updated `fragment_overview.xml` cards: added `centerCrop` scaling, `contentDescription` and `tools:src` for preview.
+- Pushed changes to new fork branch `Thando` on `ThandoVuyani/AdventureEscape_Mobile_application`.
+
 ### [1.1.0] – 2026-09-30
 **Added**
 - "What's Included" checklist on the Individual page, built from each item's data.
