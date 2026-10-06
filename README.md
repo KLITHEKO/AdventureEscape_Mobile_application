@@ -1,10 +1,9 @@
 # Adventure Escape SA – Android Application
 
 > Student project: mobile application component
-> **Module:** _[module name and code]_ · **Lecturer:** _[lecturer name]_
-> **Group members:** _[Kabelo Litheko – ST10517750]_, _[Thandazile Xaba – ST10515020]_, _[Bongiwe Motona – ST10515020]_,
-_[Thando Shongwe – ST10515020]_
-
+> **Module:** _[module name and code]_ · **Institution:** _[institution]_ · **Lecturer:** _[lecturer name]_
+> **Group members:** _[Name Surname – student number]_, _[Name Surname – student number]_, _[Name Surname – student number]_
+> **Submission date:** _[date]_
 
 ---
 
@@ -233,54 +232,13 @@ Android Studio's lint inspection (**Code → Inspect Code**) was used to find an
 
 ## 9. Change log
 
-Notable changes to the app are recorded here, newest first. The format follows *Keep a Changelog* (Lacan, n.d.), and version numbers follow Semantic Versioning (Preston-Werner, n.d.): **MAJOR.MINOR.PATCH**. Add a new entry each time the group makes a significant change, and update `versionName` / `versionCode` in `app/build.gradle.kts` to match.
-
-### [Unreleased]
-- _[Add upcoming changes here, e.g. "Replaced placeholder images with final photographs".]_
-
-### [1.1.0] – 2026-09-30
-**Added**
-- "What's Included" checklist on the Individual page, built from each item's data.
-- Four-tier discount progress on the Calculate Fee page (None / 5% / 10% / 15%).
-- Unit tests for the catalogue, discount tiers and quotation totals.
-- This README, with references and an AI-use declaration.
-
-**Changed**
-- Catalogue replaced with the client brief's 4 Adventure Packages (R1 500) and 3 Individual Activities (R750).
-- Discount rules updated to match the brief: 2 bookings = 5%, 3 = 10%, more than 3 = 15%.
-- About Us content updated to name founder Liam Daniels and the 2024 establishment date.
-- Colour palette changed to Forest Green `#19472A`, Sunset Orange `#D6810B`, Coral `#FF7F6B`, White `#FFFFFF` and Charcoal `#333333`.
-- Home screen logo changed to the transparent brand logo; app icon background set to white.
-- All code moved into the `com.example.adventureescapesa` package.
-- All on-screen text moved into `strings.xml`.
-- Overview and Calculate lists changed to `ListAdapter` with `DiffUtil`.
-
-**Removed**
-- R50 per person conservation levy (not part of the brief).
-- Pre-filled sample items in the quotation.
-- Dark-mode resource copies (`values-night`) and an unused Robolectric test (archived in `removed-files.zip`).
-
-**Fixed**
-- App crash on launch caused by a resource error in `activity_main.xml`.
-- Unresolved `R` and `databinding` imports after the package rename.
-- Badges and the quantity stepper using the Home icon as their background.
-- Button text not centred on the View Details, View and About Us buttons.
-- Content drawing behind the status bar on Android 15 and higher.
-- Summary card overlapping the empty-quotation message.
-- Lint warnings (hardcoded text, unused resources, missing autofill hints, small text size).
-
-### [1.0.0] – 2026-09-29
-**Added**
-- First working build with the six required screens: Home, About Us, Overview, Individual page, Calculate Fee and Contact Us.
-- Bottom navigation between Home, Overview, Calculate and Contact.
-- Quotation calculator and validated contact form.
-- Launcher icon generated from the Adventure Escape SA logo.
+_No entries yet._
 
 ---
 
 ## 10. Declaration of AI use
 
-Generative AI (Claude, Anthropic, 2026) was used during development to help debug build errors, correct package and import structure and align the app's data and discount logic with the client brief. All AI output was reviewed, tested and adjusted by the group, which takes full responsibility for the submitted work. 
+Generative AI (Claude, Anthropic, 2026) was used during development to help debug build errors, correct package and import structure, remove lint warnings, align the app's data and discount logic with the client brief, and draft this README. All AI output was reviewed, tested and adjusted by the group, which takes full responsibility for the submitted work. _[Adjust this statement to match your institution's AI-use policy.]_
 
 ---
 
@@ -316,8 +274,4 @@ ISO. (2019) *ISO 9241-210:2019 Ergonomics of human-system interaction – Part 2
 
 JetBrains. (n.d.) *Data classes*. Kotlin Documentation. Available at: https://kotlinlang.org/docs/data-classes.html (Accessed: 30 September 2026).
 
-Lacan, O. (n.d.) *Keep a Changelog*. Available at: https://keepachangelog.com/en/1.1.0/ (Accessed: 30 September 2026).
-
 Norman, D. (2013) *The Design of Everyday Things*. Revised and expanded edn. New York: Basic Books.
-
-Preston-Werner, T. (n.d.) *Semantic Versioning 2.0.0*. Available at: https://semver.org/ (Accessed: 30 September 2026).
