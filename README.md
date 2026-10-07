@@ -238,7 +238,7 @@ _No entries yet._
 
 ## 10. Declaration of AI use
 
-Generative AI (Claude, Anthropic, 2026) was used during development to help debug build errors, correct package and import structure, remove lint warnings, align the app's data and discount logic with the client brief, and draft this README. All AI output was reviewed, tested and adjusted by the group, which takes full responsibility for the submitted work. _[Adjust this statement to match your institution's AI-use policy.]_
+Generative AI (Claude, Anthropic, 2026) was used during development to help debug build errors, correct package and import structure, remove lint warnings, align the app's data and discount logic with the client brief. All AI output was reviewed, tested and adjusted by the group, which takes full responsibility for the submitted work. 
 
 ---
 
