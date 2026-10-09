@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-    Adventure Escape SA - Main Activity Layout
-    Single Activity Architecture hosting a persistent BottomNavigationView and Fragment container.
-    Base layout: ConstraintLayout as requested.
+    Main Activity Layout for Adventure Escape SA
+    Uses a single-activity structure with a persistent bottom navigation bar and a fragment container to display different screens. 
+    The main layout uses a ConstraintLayout to position and organize the UI elements.
 -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
