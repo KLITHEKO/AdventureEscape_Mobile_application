@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-    Adventure Escape SA - Screen 6: The Contact Us Page
+    Adventure Escape SA – Screen 6: Contact Us Page
     Features:
-    1. Top App Bar with back navigation
-    2. Contact Form with Full Name, Email Address, and Message fields, and a "Send Message" button
-    3. "Get in Touch" section with phone, email, and operating base details
-    4. Map placeholder card illustrating the Western Cape operating area
+    1. A top app bar with a back button to return to the previous screen.
+    2. A contact form with fields for the customer's full name, email address, and message, along with a “Send Message” button.
+    3. A “Get in Touch” section displaying the company's contact number, email address, and operating base details.
+    4. A map placeholder card showing the Western Cape area where Adventure Escape SA operates.
 -->
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
