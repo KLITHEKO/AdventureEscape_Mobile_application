@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-    Adventure Escape SA - Screen 4: An Individual Page (Activity Detail)
+    Adventure Escape SA – Screen 4: Activity Details Page
     Features:
-    1. Back button and breadcrumb navigation
-    2. Large activity photo placeholder
-    3. Price and title display
-    4. Short description
-    5. "What's Included" checklist with checkmark icons
-    6. "You May Also Like" horizontal row of related package cards
-    7. Prominent "Add to Booking" button fixed near the bottom
+    1. A back button to return to the previous page.
+    2. A large photo of the selected activity.
+    3. The activity name and price.
+    4. A short description of the activity.
+    5. A “What’s Included” checklist showing what the activity offers.
+    6. A “You May Also Like” section with cards for similar activities.
+    7. A prominent “Add to Booking” button fixed near the bottom of the screen.
 -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
