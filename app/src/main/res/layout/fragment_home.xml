@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-    Adventure Escape SA - Screen 1: Home Page
+    Adventure Escape SA – Screen 1: Home Page
+
     Features:
-    1. Top App Bar with Adventure Escape SA logo & title
-    2. Hero section with image placeholder, tagline, and "Browse Adventures" primary button
-    3. Quick link card to "Our Story & Mission" (About Us)
-    4. Horizontally scrolling "Featured Packages" section with image, price, and "View" button
+    1. A top app bar displaying the Adventure Escape SA logo and app name.
+    2. A hero section with an image placeholder, a short tagline introducing the company, 
+    and a primary “Browse Adventures” button that takes customers to the available packages.
+    3. A quick-link card titled “Our Story & Mission” that navigates to the About Us page.
+    4. A horizontally scrolling “Featured Packages” section displaying adventure packages with an image, 
+    price, and a “View” button to explore each package.
 -->
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
