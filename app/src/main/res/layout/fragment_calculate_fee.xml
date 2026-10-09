@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-    Adventure Escape SA - Screen 5: The Calculate Fee Page
+    Adventure Escape SA – Screen 5: Calculate Fees Page
     Features:
-    1. Top App Bar
-    2. Discount-Tier Progress Bar Card (shows how many bookings unlock the next discount)
-    3. List of the customer's selected packages/activities in cards (name, quantity stepper, price, line total)
-    4. Quotation Summary Card (subtotal, discount, conservation levy, total)
-    5. "Proceed to Booking" primary action button
+    1. A top app bar for the page title and navigation.
+    2. A discount progress card showing the customer how many bookings are needed to unlock the next discount.
+    3. A list of selected adventure packages or activities, displayed in individual cards. Each card shows the package name, quantity controls, 
+    unit price, and total price for that item.
+    4. A quotation summary card showing the subtotal, discount amount, conservation levy, and final total.
+    5. A primary “Proceed to Booking” button that allows the customer to continue with the booking process.
 -->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
