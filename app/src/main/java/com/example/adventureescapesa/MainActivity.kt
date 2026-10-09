@@ -26,7 +26,7 @@ import com.example.adventureescapesa.ui.OverviewFragment
  *   3. Calculate
  *   4. Contact
  *
- * Screens like "About Us" and "Individual Activity Detail" are pushed onto the fragment
+ * Screens like the "About Us" and "Individual Activity Detail" screens are pushed onto the fragment
  * back stack on top of the current screen.
  */
 class MainActivity : AppCompatActivity() {
