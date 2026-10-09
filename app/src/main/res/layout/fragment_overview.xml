@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-    Adventure Escape SA - Screen 3: The Overview Page
+    Adventure Escape SA – Screen 3: Overview Page
     Features:
-    1. Top Title Bar
-    2. Two-tab toggle between "Adventure Packages" and "Individual Activities" (TabLayout)
-    3. Vertically scrolling list of cards (RecyclerView with image placeholder, title, price, "View Details" button)
+    1. A title bar displaying the page name.
+    2. Two tabs: “Adventure Packages” and “Individual Activities” to switch between the two categories.
+    3. A vertically scrolling list of cards showing an image, package or activity name, price, 
+    and a “View Details” button.
+
 -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
