@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-    Adventure Escape SA - Screen 2: About Us Page
+    Adventure Escape SA – Screen 2: About Us
     Features:
-    1. Top App Bar with back navigation
-    2. Founder/team photo placeholder card with caption
-    3. Block of narrative text about company story & Western Cape eco-tourism mission
-    4. "Our Mission" section with 3 cards: Adventure, Sustainability, Community
+    1. A top app bar with a back button for returning to the previous screen.
+    2. A card displaying a founder or team photo, with a caption underneath.
+    3. A text section explaining the company’s story. 
+    4. An “Our Mission” section with three cards highlighting Adventure, Sustainability, and Community.
 -->
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
